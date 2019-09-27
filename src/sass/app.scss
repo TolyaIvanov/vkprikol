@@ -1,5 +1,6 @@
 // files
-
+@import "man";
+@import "settings";
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
@@ -39,49 +40,17 @@ input:focus, textarea:focus, select:focus{
     outline: none;
 }
 
-.header {
-	background-color: #f66D9b;
-	font-family: 'Press Start 2P', cursive;
-	font-size: 16px;
-	font-weight: bold;
-	text-align: left;
-	padding-left: 32px;
-	line-height: 64px;
-	color: #000;
-	height: 64px;
-	border-bottom: 2px solid black;
-}
-
-.mainContent {
-	background-color: #6cb2eb;
-	height: 100vh;
+.main-wrapper {
 	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
 }
 
-.news {
-	height: 100%;
-	flex-basis: 70%;
-	border-right: 2px solid black;
-	padding: 16px 16px 0 16px;
+.middle-side {
+	flex-basis: 50%;
 }
 
-.news-header {
-	font-weight: bold;
-	font-size: 20px;
-	margin-bottom: 8px;
+.right-side {
+	flex-basis: 20%;
 }
-
-.post {
-	height: 64px;
-	border: 2px solid black;
-	border-bottom: none;
-}
-
-.news-posts:last-child {
-	border-bottom: 2px solid black
-}
-
-
-
-
 

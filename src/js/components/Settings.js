@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import css from './../../sass/settings.css';
-
 
 class Settings extends Component {
     constructor(props) {

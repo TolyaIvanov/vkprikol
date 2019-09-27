@@ -1,15 +1,30 @@
 import React from 'react';
-import css from './../sass/app.css';
-import FacebookLogo from './icons/facebookLogo.js';
-// import Header from './components/Header';
-// import MainContent from './components/MainContent';
+import {Router} from "react-router-dom"
+import {Provider} from 'react-redux'
+import history from './history/history'
+import store from './store/store'
+
+
+import './../sass/app.scss'
+
+import PostContainer from "./containers/PostContainer";
 import Settings from "./components/Settings";
 
 const Index = () => {
     return (
-        <div>
-            <Settings/>
-        </div>
+        <Provider store={store}>
+            <Router history={history}>
+                <div className='main-wrapper'>
+                    <section className='middle-side'>
+                        <h1>Новости нах</h1>
+                        <PostContainer/>
+                    </section>
+                    <section className='right-side'>
+                        <Settings/>
+                    </section>
+                </div>
+            </Router>
+        </Provider>
     );
 };
 

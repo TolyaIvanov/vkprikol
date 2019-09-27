@@ -1,0 +1,1 @@
+export const SWITCH_POST_VIEW = 'SWITCH_POST_VIEW';
