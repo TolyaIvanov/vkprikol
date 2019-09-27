@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a88cbb69fe6346ccd199df490c26f45630e45846
 class Settings extends Component {
     constructor(props) {
         super(props);

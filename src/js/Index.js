@@ -1,27 +1,30 @@
 import React from 'react';
-import css from './../sass/app.css';
-import FacebookLogo from './icons/facebookLogo.js';
+import {Router} from "react-router-dom"
+import {Provider} from 'react-redux'
+import history from './history/history'
+import store from './store/store'
+
+
+import './../sass/app.scss'
+
+import PostContainer from "./containers/PostContainer";
+import Settings from "./components/Settings";
 
 const Index = () => {
     return (
-        <div className='main-wrapper'>
-            <section className='left-side'>
-                <h1>Рекламные баннеры</h1>
-            </section>
-            <section className='middle-side'>
-                <h1>Новости нах</h1>
-                <div className='post'>
-                    <div className='avatar'>
-                        <FacebookLogo/>
-                    </div>
-                    <div className='name'>Толян</div>
-                    <div className='text'>Я воняю</div>
+        <Provider store={store}>
+            <Router history={history}>
+                <div className='main-wrapper'>
+                    <section className='middle-side'>
+                        <h1>Новости нах</h1>
+                        <PostContainer/>
+                    </section>
+                    <section className='right-side'>
+                        <Settings/>
+                    </section>
                 </div>
-            </section>
-            <section className='right-side'>
-                <h1>Фильтры</h1>
-            </section>
-        </div>
+            </Router>
+        </Provider>
     );
 };
 
