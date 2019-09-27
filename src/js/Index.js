@@ -4,6 +4,7 @@ const Index = () => {
     return (
         <div>
             zdarova
+            <br/>
             nu privet
         </div>
     );
