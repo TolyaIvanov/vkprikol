@@ -36,3 +36,50 @@ p {
 input:focus, textarea:focus, select:focus{
     outline: none;
 }
+
+.main-wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.left-side h1,
+.middle-side h1,
+.right-side h1 {
+	text-align: center;
+}
+
+.middle-side {
+	flex-basis: 50%;
+}
+
+.left-side {
+	flex-basis: 20%;
+}
+
+.right-side {
+	flex-basis: 20%;
+}
+
+.post {
+	border: 1px solid #f66D9b;
+	display: flex;
+	flex: 0 1;
+}
+
+.avatar {
+	width: 16px;
+	height: 16px;
+	border-radius: 5px;
+	flex-basis: 20%;
+}
+
+.name {
+	flex-basis: 80%;
+	font-weight: bold;
+}
+
+.text {
+    flex-basis: 100%;
+}
+
